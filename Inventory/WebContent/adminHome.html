@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-full">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">Inventory Mansgent System</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog-home-1.html">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div id="wrapper" class="margin-top50">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+             <ul class="nav navbar-nav" id="sidenav01">
+                <li>
+                  <a href="#" data-toggle="collapse" data-target="#usermangemnt" data-parent="#sidenav01" class="collapsed">
+                  <i class="fa fa-user padding5"></i> User <span class="caret pull-right margin5"></span>
+                  </a>
+                  <div class="collapse" id="usermangemnt" style="height: 0px;">
+                    <ul class="nav nav-list">
+                      <li><a href="#">Submenu1.1</a></li>
+                      <li><a href="#">Submenu1.2</a></li>
+                      <li><a href="#">Submenu1.3</a></li>
+                    </ul>
+                  </div>
+                </li>
+               <li>
+                  <a href="#" data-toggle="collapse" data-target="#rolemanagemnt" data-parent="#sidenav01" class="collapsed">
+                  <i class="fa fa-users padding5"></i>Role<span class="caret pull-right margin5"></span>
+                  </a>
+                  <div class="collapse" id="rolemanagemnt" style="height: 0px;">
+                    <ul class="nav nav-list">
+                      <li><a href="#">Submenu1.1</a></li>
+                      <li><a href="#">Submenu1.2</a></li>
+                      <li><a href="#">Submenu1.3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#"><i class="fa fa-users padding5"></i> Normalmenu</a></li>
+              </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="content-header">
+                            <h1>
+                                <a id="menu-toggle" href="#" class="btn btn-default"><i class="fa fa-chevron-left"></i></a>
+                               Create User
+                            </h1>
+                        </div>
+                       <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="inputEmail">Email:</label>
+                                <div class="col-xs-9">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="inputPassword">Password:</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="confirmPassword">Confirm Password:</label>
+                                <div class="col-xs-9">
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="firstName">First Name:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="lastName">Last Name:</label>
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="phoneNumber">Phone:</label>
+                                <div class="col-xs-9">
+                                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3">Date of Birth:</label>
+                                <div class="col-xs-3">
+                                    <select class="form-control">
+                                        <option>Date</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="form-control">
+                                        <option>Month</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="form-control">
+                                        <option>Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="postalAddress">Address:</label>
+                                <div class="col-xs-9">
+                                    <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3" for="ZipCode">Zip Code:</label>
+                                <div class="col-xs-9">
+                                    <input type="number" class="form-control" id="ZipCode" placeholder="Zip Code">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-3">Gender:</label>
+                                <div class="col-xs-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="genderRadios" value="male"> Male
+                                    </label>
+                                </div>
+                                <div class="col-xs-2">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="genderRadios" value="female"> Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="news"> Send me latest news and updates.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-xs-offset-3 col-xs-9">
+                                    <input type="submit" class="btn btn-primary" value="Submit">
+                                    <input type="reset" class="btn btn-default" value="Reset">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>
